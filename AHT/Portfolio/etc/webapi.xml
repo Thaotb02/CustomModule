@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <!-- AHT Portfolio -->
+    <route url="/V1/Portfolio/:id" method="GET">
+        <service class="AHT\Portfolio\Api\PortfolioRepositoryInterface" method="getById"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V1/Portfolio" method="GET">
+        <service class="AHT\Portfolio\Api\PortfolioRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V1/Portfolio" method="POST">
+        <service class="AHT\Portfolio\Api\PortfolioRepositoryInterface" method="createPost"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V1/Portfolio/:id" method="PUT">
+        <service class="AHT\Portfolio\Api\PortfolioRepositoryInterface" method="updatePost"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V1/Portfolio/:postId" method="DELETE">
+        <service class="AHT\Portfolio\Api\PortfolioRepositoryInterface" method="deleteById"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <!-- Category -->
+
+    <route url="/V1/category" method="GET">
+        <service class="AHT\Portfolio\Api\CategoryRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/category/:id" method="GET">
+        <service class="AHT\Portfolio\Api\CategoryRepositoryInterface" method="getById"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/category" method="POST">
+        <service class="AHT\Portfolio\Api\CategoryRepositoryInterface" method="createCate"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/category/:id" method="PUT">
+        <service class="AHT\Portfolio\Api\CategoryRepositoryInterface" method="updateCate"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/category/:cateId" method="DELETE">
+        <service class="AHT\Portfolio\Api\CategoryRepositoryInterface" method="deleteById"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+</routes>
