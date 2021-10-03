@@ -43,9 +43,8 @@ class DeliverySave extends \Magento\Backend\App\Action
         $data = $this->getRequest()->getPostValue();
         $resultRedirect = $this->resultRedirectFactory->create();
         try {
-
         $id = $this->getRequest()->getParam('id');
-        $order = $this->_orderFactory->create()->load($id);
+        $order = $this->_orderFactory->create()-> load($id);
         $order->setDeliveryDate($this->getRequest()->getParam('date'));
         // $order->setDeliveryComment($this->getRequest()->getParam('comment'));
         $order->save();
