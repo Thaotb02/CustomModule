@@ -19,5 +19,12 @@ II. Đề bài
       + CBD Extractor
       + Other
     Note: Chỉ hiển thị Attribute Organization Name khi chọn Company Type = Other
-3. Module Custom Checkout
-4. Module Product Order Grid
+    
+2. Module Custom Checkout
+    - Thêm một step trang checkout để khách hàng nhập thông tin ngày giao hàng và note 
+    - Ngày giao hàng requireAdmin có thể xem + sửa thông tin ngày giao hàng và note ở backend ( Order detail )
+    - Dùng code để trường Company là required
+    
+3. Module Product Order Grid
+- Trong backend thêm Grid Order ở trong Product edit
+
