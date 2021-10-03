@@ -1,11 +1,6 @@
 <?php
 namespace AHT\Portfolio\Controller\Index;
 
-use Magento\Framework\Controller\ResultFactory;
-use Magento\Framework\App\Action\Context;
-use Magento\Framework\View\Result\PageFactory;
-use Magento\Customer\Model\SessionFactory;
-
 class Detail extends \Magento\Framework\App\Action\Action
 {
     protected $resultPageFactory;

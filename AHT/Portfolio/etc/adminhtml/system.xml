@@ -4,7 +4,6 @@
         <tab id="portfolio" translate="label" sortOrder="500">
             <label>Portfolio</label>
         </tab>
-
         <section id="portfolio" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Portfolio</label>
             <tab>portfolio</tab>
