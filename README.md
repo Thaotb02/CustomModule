@@ -26,5 +26,6 @@ II. Đề bài
     - Dùng code để trường Company là required
     
 3. Module Product Order Grid
-- Trong backend thêm Grid Order ở trong Product edit
+    - Trong backend thêm Grid Order ở trong Product edit
+    - Bảng Product Order hiển thị những order có product item là sản phẩm đã chọn
 
