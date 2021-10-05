@@ -20,11 +20,13 @@ II. Đề bài
       + Other
     Note: Chỉ hiển thị Attribute Organization Name khi chọn Company Type = Other
     
-2. Module Custom Checkout
+2. Module Product Order Grid
+    - Trong backend thêm Grid Order ở trong Product edit
+    - Bảng Product Order hiển thị những order có product item là sản phẩm đã chọn
+    
+3. Module Custom Checkout
     - Thêm một step trang checkout để khách hàng nhập thông tin ngày giao hàng và note 
     - Ngày giao hàng requireAdmin có thể xem + sửa thông tin ngày giao hàng và note ở backend ( Order detail )
     
-3. Module Product Order Grid
-    - Trong backend thêm Grid Order ở trong Product edit
-    - Bảng Product Order hiển thị những order có product item là sản phẩm đã chọn
+
 
